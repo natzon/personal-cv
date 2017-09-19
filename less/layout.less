@@ -1,6 +1,58 @@
-.section-introduce{
+* {
+    box-sizing: border-box;
+}
+.section{
 	text-align:center;
 }
+/*section1*/
+
 .face-pic{
 	margin:0 auto;
+}
+.title{
+	margin: 0.25em 0 0 0;
+}
+.subtitle{
+	margin: 1em 0 0.25em 0;
+}
+h6{
+	margin: 0 0 0.1em 0;
+}
+
+/*页面2相关*/
+.section-aboutme{
+	.aboutme-contain{
+		margin:0 auto;
+		.aboutme_title{
+			margin-top:150px;
+		}
+		ul{
+			display:flex;
+			margin-top:70px;
+			li{
+				flex:1;
+				.li_pic{
+					position:relative;
+					&:after{
+						position: absolute;
+						top:0;
+						left:0;
+					}
+					img{
+						position:absolute;
+						top:50%;
+						right:50%;
+						margin-top:-22.5px;
+						margin-right:-22.5px;
+					}
+				}
+				.li_info{
+					margin-top:20px;
+				}
+			}
+		}
+		.aboutme_info{
+			margin-top:50px;
+		}
+	}
 }

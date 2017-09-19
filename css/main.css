@@ -1,11 +1,92 @@
-.section-introduce {
+/*size*/
+/*family*/
+body {
+  font-family: "Microsoft YaHei";
+}
+h1 {
+  font-size: 3.5em;
+}
+h4 {
+  font-size: 1.25em;
+}
+h6 {
+  font-size: 1.1em;
+}
+/*页面2*/
+.section-aboutme .aboutme_title {
+  font-size: 2em;
+}
+p {
+  font-size: 1.3em;
+}
+* {
+  box-sizing: border-box;
+}
+.section {
   text-align: center;
 }
+/*section1*/
 .face-pic {
   margin: 0 auto;
 }
+.title {
+  margin: 0.25em 0 0 0;
+}
+.subtitle {
+  margin: 1em 0 0.25em 0;
+}
+h6 {
+  margin: 0 0 0.1em 0;
+}
+/*页面2相关*/
+.section-aboutme .aboutme-contain {
+  margin: 0 auto;
+}
+.section-aboutme .aboutme-contain .aboutme_title {
+  margin-top: 150px;
+}
+.section-aboutme .aboutme-contain ul {
+  display: flex;
+  margin-top: 70px;
+}
+.section-aboutme .aboutme-contain ul li {
+  flex: 1;
+}
+.section-aboutme .aboutme-contain ul li .li_pic {
+  position: relative;
+}
+.section-aboutme .aboutme-contain ul li .li_pic:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.section-aboutme .aboutme-contain ul li .li_pic img {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin-top: -22.5px;
+  margin-right: -22.5px;
+}
+.section-aboutme .aboutme-contain ul li .li_info {
+  margin-top: 20px;
+}
+.section-aboutme .aboutme-contain .aboutme_info {
+  margin-top: 50px;
+}
 /*此文件是颜色大小等样式*/
+/*整体初始化*/
+ul,
+li,
+div {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/*section1的相关样式*/
 .section {
+  color: #fff;
+}
+.section-introduce {
   background: rgba(34, 136, 195, 0.98);
 }
 .face-pic {
@@ -24,4 +105,62 @@
   -moz-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
+}
+h1 {
+  text-shadow: 1px 2px #22c3aa, 2px 4px #2196F3;
+  text-align: center;
+}
+.subtitle {
+  color: #aee2d9;
+}
+a {
+  color: #aee2d9;
+  text-decoration: none;
+  transition: 0.5s;
+}
+a:hover {
+  color: #CDDC39;
+}
+/*第二部分的section*/
+.section-aboutme {
+  background: #3f51b5;
+}
+.section-aboutme .aboutme-contain {
+  height: 100%;
+  max-width: 800px;
+}
+.section-aboutme .aboutme-contain ul li {
+  width: 100px;
+}
+.section-aboutme .aboutme-contain ul li .li_pic {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.section-aboutme .aboutme-contain ul li .li_pic:after {
+  content: '';
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.section-aboutme .aboutme-contain ul li .li_pic:hover {
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-transform: scale(0.93);
+  transform: scale(0.93);
+  color: #fff;
+}
+.section-aboutme .aboutme-contain ul li .li_pic:hover :after {
+  -webkit-animation: effect 1.3s ease-out 75ms;
+  animation: effect 1.3s ease-out 75ms;
+}
+.section-aboutme .aboutme-contain ul li .li_pic img {
+  width: 50%;
+  height: 50%;
 }
