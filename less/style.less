@@ -12,7 +12,7 @@ ul,li,div{
 	color:#fff;
 }
 .section-introduce{
-	background:rgba(34, 136, 195, 0.98);
+	background:#4f59d8;
 }
 .face-pic{
 	background:url(../img/face.jpg) no-repeat;
@@ -20,7 +20,7 @@ ul,li,div{
 	width:200px;
 	height:200px;
 	border-radius:50%;
-	border: 10px solid #2196F3;
+	border: 10px solid #32347f;
 }
 .personal-face{
 	width: 200px;
@@ -280,4 +280,36 @@ a{
   100% {
     top: -22px;
   }
+}
+
+
+
+/*第四个页面*/
+.section-works{
+	background:#945c4c;
+	.section-works_contain{
+		height:100%;
+		max-width:1200px;
+		margin:0 auto;
+		.works_content{
+			width: 750px;
+		    height: 350px;
+		    background: #F2F4F5;
+		    margin: 0 auto;
+		    border: 1px solid #eee;
+		    border-radius: 10px;
+		    color: #000;
+		    transition: -webkit-transform .3s linear;
+		    transition: transform .3s linear;
+		    overflow: hidden;
+		    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+		    -webkit-transform-style: preserve-3d;
+		    transform-style: preserve-3d;
+		    margin-top:20px;
+		    .content_one,.content_two,.content_three{
+		    	width:100%;
+		    	height:100%;
+		    }
+		}
+	}
 }
