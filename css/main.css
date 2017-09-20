@@ -13,11 +13,12 @@ h6 {
   font-size: 1.1em;
 }
 /*页面2*/
-.section-aboutme .aboutme_title {
+.aboutme_title,
+.skill_title {
   font-size: 2em;
 }
 p {
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 * {
   box-sizing: border-box;
@@ -72,6 +73,22 @@ h6 {
 }
 .section-aboutme .aboutme-contain .aboutme_info {
   margin-top: 50px;
+}
+/*section3相关样式*/
+.skill_title {
+  margin-top: 150px;
+}
+.skill_content {
+  display: flex;
+  margin-top: 70px;
+}
+.skill_content .skill_content_animate {
+  flex: 1;
+}
+.skill_content .skill_content_info {
+  flex: 1;
+  padding-top: 20px;
+  line-height: 24px;
 }
 /*此文件是颜色大小等样式*/
 /*整体初始化*/
@@ -163,4 +180,181 @@ a:hover {
 .section-aboutme .aboutme-contain ul li .li_pic img {
   width: 50%;
   height: 50%;
+}
+/*页面三*/
+.section-skill {
+  background: #4d5e8f;
+}
+.section-skill_contain {
+  height: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.section-skill_contain .skill_content_animate {
+  padding: 5px;
+  position: relative;
+  font-size: 12px;
+  color: #FFF;
+}
+.section-skill_contain .skill_content_animate .out-circle {
+  width: 242px;
+  height: 242px;
+  border: 4px dashed #999;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+}
+.section-skill_contain .skill_content_animate .out-circle li {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+}
+.section-skill_contain .skill_content_animate .out-circle .out:nth-child(1) {
+  background-color: rgba(71, 83, 94, 0.8);
+  -webkit-animation: outX 8s cubic-bezier(0.36, 0, 0.64, 1) -4s infinite alternate, outY 8s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
+  animation: outX 8s cubic-bezier(0.36, 0, 0.64, 1) -4s infinite alternate, outY 8s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
+}
+.section-skill_contain .skill_content_animate .out-circle .out:nth-child(2) {
+  background: rgba(121, 100, 102, 0.8);
+  -webkit-animation: outX 8s cubic-bezier(0.36, 0, 0.64, 1) -6s infinite alternate, outY 8s cubic-bezier(0.36, 0, 0.64, 1) -2s infinite alternate;
+  animation: outX 8s cubic-bezier(0.36, 0, 0.64, 1) -6s infinite alternate, outY 8s cubic-bezier(0.36, 0, 0.64, 1) -2s infinite alternate;
+}
+.section-skill_contain .skill_content_animate .out-circle .out:nth-child(3) {
+  background: rgba(117, 148, 179, 0.8);
+  -webkit-animation: outX 8s cubic-bezier(0.36, 0, 0.64, 1) -8s infinite alternate, outY 8s cubic-bezier(0.36, 0, 0.64, 1) -4s infinite alternate;
+  animation: outX 8s cubic-bezier(0.36, 0, 0.64, 1) -8s infinite alternate, outY 8s cubic-bezier(0.36, 0, 0.64, 1) -4s infinite alternate;
+}
+.section-skill_contain .skill_content_animate .out-circle .out:nth-child(4) {
+  background: rgba(76, 157, 160, 0.8);
+  -webkit-animation: outX 8s cubic-bezier(0.36, 0, 0.64, 1) -10s infinite alternate, outY 8s cubic-bezier(0.36, 0, 0.64, 1) -6s infinite alternate;
+  animation: outX 8s cubic-bezier(0.36, 0, 0.64, 1) -10s infinite alternate, outY 8s cubic-bezier(0.36, 0, 0.64, 1) -6s infinite alternate;
+}
+.section-skill_contain .skill_content_animate .out-circle .out:nth-child(5) {
+  background: rgba(193, 131, 106, 0.8);
+  -webkit-animation: outX 8s cubic-bezier(0.36, 0, 0.64, 1) -12s infinite alternate, outY 8s cubic-bezier(0.36, 0, 0.64, 1) -8s infinite alternate;
+  animation: outX 8s cubic-bezier(0.36, 0, 0.64, 1) -12s infinite alternate, outY 8s cubic-bezier(0.36, 0, 0.64, 1) -8s infinite alternate;
+}
+.section-skill_contain .skill_content_animate .out-circle .out:nth-child(6) {
+  background: rgba(171, 209, 220, 0.8);
+  -webkit-animation: outX 8s cubic-bezier(0.36, 0, 0.64, 1) -14s infinite alternate, outY 8s cubic-bezier(0.36, 0, 0.64, 1) -10s infinite alternate;
+  animation: outX 8s cubic-bezier(0.36, 0, 0.64, 1) -14s infinite alternate, outY 8s cubic-bezier(0.36, 0, 0.64, 1) -10s infinite alternate;
+}
+.section-skill_contain .skill_content_animate .out-circle .out:nth-child(7) {
+  background: rgba(238, 215, 163, 0.8);
+  -webkit-animation: outX 8s cubic-bezier(0.36, 0, 0.64, 1) -16s infinite alternate, outY 8s cubic-bezier(0.36, 0, 0.64, 1) -12s infinite alternate;
+  animation: outX 8s cubic-bezier(0.36, 0, 0.64, 1) -16s infinite alternate, outY 8s cubic-bezier(0.36, 0, 0.64, 1) -12s infinite alternate;
+}
+.section-skill_contain .skill_content_animate .out-circle .out:nth-child(8) {
+  background: rgba(66, 66, 66, 0.8);
+  -webkit-animation: outX 8s cubic-bezier(0.36, 0, 0.64, 1) -18s infinite alternate, outY 8s cubic-bezier(0.36, 0, 0.64, 1) -14s infinite alternate;
+  animation: outX 8s cubic-bezier(0.36, 0, 0.64, 1) -18s infinite alternate, outY 8s cubic-bezier(0.36, 0, 0.64, 1) -14s infinite alternate;
+}
+.section-skill_contain .skill_content_animate .in-circle {
+  width: 142px;
+  height: 142px;
+  border: 4px dashed #999;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.section-skill_contain .skill_content_animate .in-circle li {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  line-height: 40px;
+}
+.section-skill_contain .skill_content_animate .in-circle .in:nth-child(1) {
+  background: rgba(71, 83, 94, 0.8);
+  -webkit-animation: innerX 8s cubic-bezier(0.36, 0, 0.64, 1) -4s infinite alternate, innerY 8s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
+  animation: innerX 8s cubic-bezier(0.36, 0, 0.64, 1) -4s infinite alternate, innerY 8s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
+}
+.section-skill_contain .skill_content_animate .in-circle .in:nth-child(2) {
+  background: rgba(171, 209, 220, 0.8);
+  -webkit-animation: innerX 8s cubic-bezier(0.36, 0, 0.64, 1) -8s infinite alternate, innerY 8s cubic-bezier(0.36, 0, 0.64, 1) -4s infinite alternate;
+  animation: innerX 8s cubic-bezier(0.36, 0, 0.64, 1) -8s infinite alternate, innerY 8s cubic-bezier(0.36, 0, 0.64, 1) -4s infinite alternate;
+}
+.section-skill_contain .skill_content_animate .in-circle .in:nth-child(3) {
+  background-color: rgba(121, 100, 102, 0.8);
+  -webkit-animation: innerX 8s cubic-bezier(0.36, 0, 0.64, 1) -12s infinite alternate, innerY 8s cubic-bezier(0.36, 0, 0.64, 1) -8s infinite alternate;
+  animation: innerX 8s cubic-bezier(0.36, 0, 0.64, 1) -12s infinite alternate, innerY 8s cubic-bezier(0.36, 0, 0.64, 1) -8s infinite alternate;
+}
+.section-skill_contain .skill_content_animate .in-circle .in:nth-child(4) {
+  background-color: rgba(238, 215, 163, 0.8);
+  -webkit-animation: innerX 8s cubic-bezier(0.36, 0, 0.64, 1) -16s infinite alternate, innerY 8s cubic-bezier(0.36, 0, 0.64, 1) -12s infinite alternate;
+  animation: innerX 8s cubic-bezier(0.36, 0, 0.64, 1) -16s infinite alternate, innerY 8s cubic-bezier(0.36, 0, 0.64, 1) -12s infinite alternate;
+}
+/*动画效果*/
+@-webkit-keyframes outY {
+  0% {
+    top: -27px;
+  }
+  100% {
+    top: 217px;
+  }
+}
+@keyframes outY {
+  0% {
+    top: -27px;
+  }
+  100% {
+    top: 217px;
+  }
+}
+@-webkit-keyframes outX {
+  0% {
+    left: -27px;
+  }
+  100% {
+    left: 217px;
+  }
+}
+@keyframes outX {
+  0% {
+    left: -27px;
+  }
+  100% {
+    left: 217px;
+  }
+}
+@-webkit-keyframes innerX {
+  0% {
+    left: -22px;
+  }
+  100% {
+    left: 122px;
+  }
+}
+@keyframes innerX {
+  0% {
+    left: -22px;
+  }
+  100% {
+    left: 122px;
+  }
+}
+@-webkit-keyframes innerY {
+  0% {
+    top: 122px;
+  }
+  100% {
+    top: -22px;
+  }
+}
+@keyframes innerY {
+  0% {
+    top: 122px;
+  }
+  100% {
+    top: -22px;
+  }
 }
