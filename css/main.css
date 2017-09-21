@@ -15,11 +15,15 @@ h6 {
 /*页面2*/
 .aboutme_title,
 .skill_title,
-.works_title {
-  font-size: 2em;
+.works_title,
+.contact_title {
+  font-size: 1.8em;
 }
 p {
   font-size: 1.1em;
+}
+.contact_content_topic li {
+  font-size: 1.4em;
 }
 * {
   box-sizing: border-box;
@@ -93,7 +97,7 @@ h6 {
 }
 /*作品集页面4*/
 .works_title {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 .works_content {
   margin-top: 30px;
@@ -114,6 +118,36 @@ h6 {
 .works_content .content_bottom .content_info {
   top: 0;
   left: 0;
+}
+/*页面四*/
+.section-contact .contact_title {
+  margin-top: 100px;
+}
+.section-contact .contact_content {
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.section-contact .contact_content .contact_content_topic {
+  display: flex;
+}
+.section-contact .contact_content .contact_content_topic li {
+  flex: 1;
+}
+.section-contact .contact_content .content_info {
+  margin-top: 30px;
+}
+.section-contact .contact_content .content_way {
+  display: flex;
+  margin-top: 100px;
+}
+.section-contact .contact_content .content_way li {
+  flex: 1;
+}
+.section-contact .footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 /*此文件是颜色大小等样式*/
 /*整体初始化*/
@@ -185,6 +219,7 @@ a:hover {
 }
 .section-aboutme .aboutme-contain ul li .li_pic:after {
   content: '';
+  position: absolute;
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
   opacity: 0;
   -webkit-transform: scale(0.9);
@@ -199,13 +234,43 @@ a:hover {
   transform: scale(0.93);
   color: #fff;
 }
-.section-aboutme .aboutme-contain ul li .li_pic:hover :after {
+.section-aboutme .aboutme-contain ul li .li_pic:hover:after {
   -webkit-animation: effect 1.3s ease-out 75ms;
   animation: effect 1.3s ease-out 75ms;
 }
 .section-aboutme .aboutme-contain ul li .li_pic img {
   width: 50%;
   height: 50%;
+}
+@-webkit-keyframes effect {
+  0% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.5;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3F51B5, 0 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3F51B5, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+@keyframes effect {
+  0% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.5;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3F51B5, 0 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3F51B5, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 0;
+  }
 }
 /*页面三*/
 .section-skill {
@@ -464,4 +529,80 @@ a:hover {
 }
 .section-works .section-works_contain .works_content .content_bottom li:hover {
   transform: scale(1.05);
+}
+/*第四个页面*/
+/*.section-contact{
+	background:#a29971;
+	.section-contact_contain{
+		height:100%;
+		max-width:1200px;
+		.contact_content{
+			width:300px;
+			height:500px;
+			background:#569;
+			.contact_content_topic{
+				li:nth-child(1){
+					color:#f00;
+				}
+				li:nth-child(2){
+					color:#3cf;
+				}
+				li:nth-child(3){
+					color:#6c0;
+				}
+				li:nth-child(4){
+					color:#f63;
+			}
+			.content_way{
+				width:100px;
+				height:100px;
+				background:#ddd;
+			}
+		}
+
+		
+		}
+	}
+}*/
+.section-contact {
+  background: #a29971;
+}
+.section-contact .section-contact_contain {
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-contact .section-contact_contain .contact_content {
+  width: 300px;
+}
+.section-contact .section-contact_contain .contact_content .contact_content_topic li:nth-child(1) {
+  color: #f00;
+}
+.section-contact .section-contact_contain .contact_content .contact_content_topic li:nth-child(2) {
+  color: #3cf;
+}
+.section-contact .section-contact_contain .contact_content .contact_content_topic li:nth-child(3) {
+  color: #6c0;
+}
+.section-contact .section-contact_contain .contact_content .contact_content_topic li:nth-child(4) {
+  color: #f63;
+}
+.section-contact .section-contact_contain .contact_content .content_way li {
+  border-radius: 50%;
+  border: 1px solid #FFF;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin: 0 10px;
+}
+.section-contact .section-contact_contain .contact_content .content_way li a img {
+  width: 65%;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translateX(50%) translateY(-50%);
+  transform: translateX(50%) translateY(-50%);
+}
+.section-contact .section-contact_contain .footer {
+  height: 100px;
 }

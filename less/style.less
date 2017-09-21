@@ -68,14 +68,15 @@ a{
     				border-radius: 50%;
     				cursor: pointer;
 					&:after{
-						content: '';
-					    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
-					    opacity: 0;
-					    -webkit-transform: scale(0.9);
-					    transform: scale(0.9);
-					    width: 100%;
-					    height: 100%;
-					    border-radius: 50%;
+				      content: '';
+					  position: absolute;
+					  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+					  opacity: 0;
+					  -webkit-transform: scale(0.9);
+					          transform: scale(0.9);
+					  width: 100%;
+					  height: 100%;
+					  border-radius: 50%;
 					}
 					&:hover{
 						background: rgba(255, 255, 255, 0.05);
@@ -83,7 +84,7 @@ a{
 			          	transform: scale(0.93);
 					  	color: #fff;
 					}
-					&:hover :after{
+					&:hover:after{
 						-webkit-animation: effect 1.3s ease-out 75ms;
           				animation: effect 1.3s ease-out 75ms;
 					}
@@ -95,6 +96,36 @@ a{
 			}
 		}
 	}
+}
+@-webkit-keyframes effect {
+  0% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.5;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3F51B5, 0 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3F51B5, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
+}
+@keyframes effect {
+  0% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.5;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3F51B5, 0 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3F51B5, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
 }
 
 /*页面三*/
@@ -371,4 +402,93 @@ a{
 			}
 		}
 	}
+}
+
+
+/*第四个页面*/
+/*.section-contact{
+	background:#a29971;
+	.section-contact_contain{
+		height:100%;
+		max-width:1200px;
+		.contact_content{
+			width:300px;
+			height:500px;
+			background:#569;
+			.contact_content_topic{
+				li:nth-child(1){
+					color:#f00;
+				}
+				li:nth-child(2){
+					color:#3cf;
+				}
+				li:nth-child(3){
+					color:#6c0;
+				}
+				li:nth-child(4){
+					color:#f63;
+			}
+			.content_way{
+				width:100px;
+				height:100px;
+				background:#ddd;
+			}
+		}
+
+		
+		}
+	}
+}*/
+.section-contact{
+	background:#a29971;
+	.section-contact_contain{
+		height:100%;
+		max-width:1200px;
+		margin:0 auto;
+		.contact_content{
+			width:300px;
+			.contact_content_topic{
+				li:nth-child(1){
+					color:#f00;
+				}
+				li:nth-child(2){
+					color:#3cf;
+				}
+				li:nth-child(3){
+					color:#6c0;
+				}
+				li:nth-child(4){
+					color:#f63;
+				}
+			}
+			.content_way{
+				li{
+						border-radius: 50%;
+					    border: 1px solid #FFF;
+					    width: 40px;
+					    height: 40px;
+					    position: relative;
+					    margin:0 10px;
+					a{
+
+					    img{
+					    	width: 65%;
+						    position: absolute;
+						    top: 50%;
+						    right: 50%;
+						    -webkit-transform: translateX(50%) translateY(-50%);
+						    transform: translateX(50%) translateY(-50%);
+					    }
+					}
+				}
+			}
+
+
+		}
+		.footer{
+			
+			height:100px;
+		}
+	}
+
 }
