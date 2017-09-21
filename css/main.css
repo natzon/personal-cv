@@ -96,18 +96,31 @@ h6 {
   margin-top: 150px;
 }
 .works_content {
-  position: relative;
+  margin-top: 30px;
 }
-.works_content .content_one,
-.works_content .content_two,
-.works_content .content_three {
-  position: absolute;
+.works_content .content_top {
+  margin-bottom: 20px;
+}
+.works_content .content_top li {
+  margin: 0 20px;
+}
+.works_content .content_top .content_info {
+  top: 0;
+  left: 0;
+}
+.works_content .content_bottom li {
+  margin: 0 20px;
+}
+.works_content .content_bottom .content_info {
+  top: 0;
+  left: 0;
 }
 /*此文件是颜色大小等样式*/
 /*整体初始化*/
 ul,
 li,
-div {
+div,
+a {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -381,24 +394,74 @@ a:hover {
   margin: 0 auto;
 }
 .section-works .section-works_contain .works_content {
-  width: 750px;
-  height: 350px;
-  background: #F2F4F5;
-  margin: 0 auto;
-  border: 1px solid #eee;
-  border-radius: 10px;
-  color: #000;
-  transition: -webkit-transform 0.3s linear;
-  transition: transform .3s linear;
-  overflow: hidden;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  margin-top: 20px;
+  max-width: 1200px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
 }
-.section-works .section-works_contain .works_content .content_one,
-.section-works .section-works_contain .works_content .content_two,
-.section-works .section-works_contain .works_content .content_three {
+.section-works .section-works_contain .works_content .content_top {
+  flex: 1;
+  display: flex;
+}
+.section-works .section-works_contain .works_content .content_top li {
+  flex: 1;
+  background: #fff;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  position: relative;
+  transition: all 1s ease;
+}
+.section-works .section-works_contain .works_content .content_top li img {
+  width: 360px;
+  height: 190px;
+  border-radius: 10px;
+}
+.section-works .section-works_contain .works_content .content_top li .content_info {
+  position: absolute;
   width: 100%;
   height: 100%;
+  background: #000000;
+  line-height: 190px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 1s ease;
+}
+.section-works .section-works_contain .works_content .content_top li:hover .content_info {
+  opacity: 0.71;
+}
+.section-works .section-works_contain .works_content .content_top li:hover {
+  transform: scale(1.05);
+}
+.section-works .section-works_contain .works_content .content_bottom {
+  flex: 1;
+  display: flex;
+}
+.section-works .section-works_contain .works_content .content_bottom li {
+  flex: 1;
+  background: #fff;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  position: relative;
+  transition: all 1s ease;
+}
+.section-works .section-works_contain .works_content .content_bottom li img {
+  width: 360px;
+  height: 190px;
+  border-radius: 10px;
+}
+.section-works .section-works_contain .works_content .content_bottom li .content_info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  line-height: 190px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 1s ease;
+}
+.section-works .section-works_contain .works_content .content_bottom li:hover .content_info {
+  opacity: 0.71;
+}
+.section-works .section-works_contain .works_content .content_bottom li:hover {
+  transform: scale(1.05);
 }
