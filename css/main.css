@@ -606,3 +606,8 @@ a:hover {
 .section-contact .section-contact_contain .footer {
   height: 100px;
 }
+@media (max-width: 768px) {
+  #pp-nav {
+    display: none;
+  }
+}
