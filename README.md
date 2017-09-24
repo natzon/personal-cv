@@ -12,6 +12,8 @@
 
 ##添加了行响应式代码，当页面小于768px时，旁边的导航条消失。
 
+[![简历预览]](https://natzon.github.io/personal-cv/)  
+
 
 
 
